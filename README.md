@@ -2,7 +2,7 @@
 
 A personal Linux home lab setup documented as part of my self-directed learning journey into IT and cybersecurity.
 
-> **Transparency note:** This setup was built and documented with AI assistance (Claude by Anthropic). I'm an IT student learning Linux from the ground up — this repo is an honest record of what I've configured, understood, and explored, not a showcase of expert-level work.
+> **Transparency note:** This setup was built and documented with AI assistance (Claude by Anthropic). I'm an IT student learning Linux from the ground up. This repo is an honest record of what I've configured, understood, and explored, not a showcase of expert-level work.
 
 ---
 
