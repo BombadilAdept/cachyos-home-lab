@@ -11,7 +11,7 @@ A personal Linux home lab setup documented as part of my self-directed learning 
 |-----------|---------|
 | Distro | Fedora Linux 44 Workstation |
 | CPU | Intel Core i5-4690 |
-| GPU | NVIDIA GeForce GTX 970 (running on open-source `nouveau` driver) |
+| GPU | NVIDIA GeForce GTX 970 (running on manually configured proprietary drivers) |
 | RAM | 16 GB |
 | Primary storage | 120 GB SSD (Samsung) — Btrfs, automatic partitioning |
 | Secondary storage | 1 TB HDD (Western Digital) — ext4, mounted at `/mnt/hdd` |
@@ -23,6 +23,9 @@ A personal Linux home lab setup documented as part of my self-directed learning 
 ### Desktop environment
 - **GNOME** on **Wayland** (a modern display protocol that replaces the older X11)
 - **Xwayland** for legacy app compatibility (allows older apps built for X11 to run under Wayland)
+
+### Virtualization & Containers
+- **KVM/QEMU & virt-manager:** Hypervisor and management interface fully configured. Hardware-based virtualization errors resolved at the BIOS/kernel level to enable stable virtual machine deployment.
 
 ### Version control & remote access
 - **Git** 
@@ -56,6 +59,9 @@ A personal Linux home lab setup documented as part of my self-directed learning 
 - [x] Configure firewall (`firewalld` — native Fedora)
 - [x] Set up privacy-focused DNS (Quad9)
 - [x] Install Wireshark
+- [x] Resolve hardware virtualization errors and install `virt-manager`
+- [ ] Optimize RAM allocation and deploy lab VMs (**Wazuh** for SIEM/security monitoring and **Kali Linux** for testing)
+- [ ] Configure **Docker** engine to deploy containerized services efficiently on the secondary HDD (`/mnt/hdd`)
 - [ ] Log analysis workflow
 - [ ] Explore TryHackMe for hands-on cybersecurity practice
 
@@ -63,7 +69,7 @@ A personal Linux home lab setup documented as part of my self-directed learning 
 
 ## Known hardware notes
 
-- **NVIDIA GTX 970 (GM204, PCI ID 10de:13c2):** proprietary driver 595.80 does not support this GPU on Fedora 44. Driver branch 470xx initializes correctly but is incompatible with GDM. System runs stably on `nouveau` open-source driver.
+- **NVIDIA GTX 970 (GM204, PCI ID 10de:13c2):** Standard repository configurations for driver branch 470xx initially presented conflicts with GDM on Fedora 44. Issues were successfully resolved through manual configuration of the proprietary drivers, achieving a stable desktop environment and proper display manager initialization.
 
 ---
 
