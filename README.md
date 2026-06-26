@@ -75,7 +75,7 @@ A personal Linux home lab setup documented as part of my self-directed learning 
 
 ## Learning context
 
-I'm 37, working at a public library in Patagonia, Argentina, and teaching myself IT systems independently after leaving a university program. My current focus is Linux system administration and cybersecurity.
+I'm 38, working at a public library in Patagonia, Argentina, and teaching myself IT systems independently after leaving a university program. My current focus is Linux system administration and cybersecurity.
 
 This repo is part of a broader portfolio being built alongside the **Google Cybersecurity Professional Certificate** on Coursera.
 
